@@ -1,0 +1,49 @@
+h1,
+h2,
+h5,
+h6 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  padding: 10px;
+  margin: 0;
+}
+.row {
+  margin: auto;
+  width: 90%;
+}
+
+.details {
+  padding-bottom: 20px;
+}
+
+.display {
+  border-top: 0.5px solid;
+}
+
+.days {
+  padding: 10px;
+  margin: 0;
+}
+
+.degree-option {
+  position: relative;
+  top: -100px;
+  left: 95%;
+}
+
+.col-6.right {
+  text-align: right;
+}
+
+input.form-control {
+  width: 70%;
+  margin: 50px auto 20px auto;
+  border-radius: 1.5rem;
+}
+
+p.days {
+  padding: 10px;
+}

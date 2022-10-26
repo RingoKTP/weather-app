@@ -4,9 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- FontAwesome only -->
+    <script
+      src="https://kit.fontawesome.com/48859c0da5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" type="text/css" />
+    <title>Weather</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="container">
+      <div class="row">
+        <form class="search-form" id="search-form">
+          <div class="mb-3">
+            <input
+              class="form-control"
+              id="city-input"
+              type="text"
+              placeholder="Enter a city"
+            />
+          </div>
+        </form>
+
+        <h2 id="city">Vancouver</h2>
+        <h6 id="todayDate">Thursday 9:00AM</h6>
+        <div class="row">
+          <div class="current-temperature">
+            <h1 id="current-temperature">32</h1>
+            <h6>Sunny</h6>
+          </div>
+          <div class="degree-option">
+            <p>
+              <a href="#" id="celcius">°C</a> |
+              <a href="#" id="fahrenheit">°F</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="row details">
+          <div class="col-4 text-center">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+              </h5>
+              <h6>2%</h6>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fa-solid fa-droplet"></i>
+              </h5>
+              <h6>63%</h6>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fa-solid fa-wind"></i>
+              </h5>
+              <h6>2km/h</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row display">
+          <div class="col-6"><p class="days">Friday</p></div>
+          <div class="col-6 right">
+            <div class="text-end">31°</div>
+            <div class="text-end">Sunny</div>
+          </div>
+        </div>
+        <div class="row display">
+          <div class="col-6"><p class="days">Saturday</p></div>
+          <div class="col-6 right">
+            <div class="text-end">30°</div>
+            <div class="text-end">Sunny</div>
+          </div>
+        </div>
+        <div class="row display">
+          <div class="col-6"><p class="days">Sunday</p></div>
+          <div class="col-6 right">
+            <div class="text-end">28°</div>
+            <div class="text-end">Clear</div>
+          </div>
+        </div>
+        <div class="row display">
+          <div class="col-6"><p class="days">Monday</p></div>
+          <div class="col-6 right">
+            <div class="text-end">16°</div>
+            <div class="text-end">Raining</div>
+          </div>
+        </div>
+        <div class="row display">
+          <div class="col-6"><p class="days">Tuesday</p></div>
+          <div class="col-6 right">
+            <div class="text-end">20°</div>
+            <div class="text-end">Sunny</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
